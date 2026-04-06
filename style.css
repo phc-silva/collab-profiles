@@ -3,7 +3,6 @@
 body {
   margin: 0;
   min-height: 100vh;
-  /* Gradiente mais suave para não brigar com o card */
   background: radial-gradient(circle at center, #1a1a1a 0%, #000000 100%);
   display: flex;
   justify-content: center;
@@ -15,25 +14,19 @@ body {
 .container {
   display: flex;
   gap: 30px;
-  flex-wrap: wrap; /* Para os cards quebrarem linha no celular */
+  flex-wrap: wrap;
   justify-content: center;
   padding: 20px;
 }
 
 .card {
-  background: #1e1e1e; /* Cinza escuro */
+  background: #1e1e1e;
   padding: 35px 25px;
   border-radius: 20px;
   text-align: center;
   width: 280px;
-
-  /* Borda sutil que brilha no escuro */
   border: 1px solid rgba(255, 255, 255, 0.08);
-
-  /* Sombra corrigida (ponto no 0.5) */
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
-
-  /* Transição suave para o efeito de hover */
   transition:
     transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
     background 0.3s;
@@ -41,7 +34,7 @@ body {
 
 .card:hover {
   transform: translateY(-10px) scale(1.03);
-  background: #252525; /* Clareia levemente ao passar o mouse */
+  background: #252525;
   border-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -49,7 +42,7 @@ body {
   width: 140px;
   height: 140px;
   border-radius: 50%;
-  object-fit: cover; /* Não deixa a foto esticar */
+  object-fit: cover;
   border: 3px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 15px;
 }
@@ -65,7 +58,7 @@ h1 {
   font-size: 15px;
   line-height: 1.5;
   margin-bottom: 20px;
-  min-height: 45px; /* Mantém os botões alinhados mesmo com bios diferentes */
+  min-height: 45px; 
 }
 
 .link {
